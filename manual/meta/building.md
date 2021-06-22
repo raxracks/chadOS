@@ -59,13 +59,13 @@ Clone the repository with all its submodules.
 ```sh
 $ git clone --recursive https://github.com/raxracks/chadOS
 
-$ cd skift
+$ cd chadOS
 ```
 
 Or if you have already cloned this repo without `--recursive` do:
 
 ```sh
-$ cd skift
+$ cd chadOS
 
 $ git submodule init
 ```
