@@ -327,7 +327,7 @@ HjResult hj_system_info(SystemInfo *info)
 
     strncpy(info->kernel_build, __BUILD_GITREF__, SYSTEM_INFO_FIELD_SIZE);
 
-    strlcpy(info->system_name, "skift", SYSTEM_INFO_FIELD_SIZE);
+    strlcpy(info->system_name, "chad", SYSTEM_INFO_FIELD_SIZE);
 
     // FIXME: this should not be hard coded.
     strlcpy(info->machine, "machine", SYSTEM_INFO_FIELD_SIZE);

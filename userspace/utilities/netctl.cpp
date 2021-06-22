@@ -23,6 +23,8 @@ int main(int argc, char **argv)
                   state.mac_address[3],
                   state.mac_address[4],
                   state.mac_address[5]);
+    } else {
+        IO::outln("Couldn't fetch network info.");
     }
 
     return 0;

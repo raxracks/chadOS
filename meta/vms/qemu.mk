@@ -8,10 +8,6 @@ QEMU_FLAGS= \
 	-rtc base=localtime \
 	$(QEMU_DISK)
 
-ifeq ($(CONFIG_DISPLAY),sdl)
-	QEMU_FLAGS+=-display sdl
-endif
-
 QEMU_FLAGS_VIRTIO=-device virtio-rng-pci \
 				 -device virtio-serial \
 				 -nic user,model=virtio-net-pci \
