@@ -45,8 +45,8 @@ skiftOS running in QEMU 5.1
 
 ## Contributors
 
-<a href="https://github.com/skiftOS/skift/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=skiftOS/skift" />
+<a href="https://github.com/raxracks/chadOS/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=raxracks/chadOS" />
 </a>
 
 ## Projects
