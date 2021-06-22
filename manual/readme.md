@@ -1,7 +1,7 @@
 ![Banner](header.png)
 
 <h2 align="center">
-    The skiftOS manual
+    The chadOS manual
 </h2>
 
 ## 0. Meta

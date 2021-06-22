@@ -8,7 +8,7 @@
   <a href="https://github.com/skiftOS/skift/releases">Releases</a>
 </p>
 
-# skiftOS
+# chadOS
 
 [![Tests](https://github.com/skiftOS/skift/actions/workflows/tests.yml/badge.svg)](https://github.com/skiftOS/skift/actions/workflows/tests.yml)
 [![Deploy](https://github.com/skiftOS/skift/actions/workflows/deploy.yml/badge.svg)](https://github.com/skiftOS/skift/actions/workflows/deploy.yml)
@@ -17,7 +17,7 @@
 [![GitHub issues](https://img.shields.io/github/issues-raw/skiftOS/skift)](https://github.com/skiftOS/skift/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/skiftOS/skift)](https://github.com/skiftOS/skift/pulls)
 
- - **skiftOS** is an operating system built from scratch in modern C++. 
+ - **chadOS** is a distribution of [skiftOS](https://github.com/skiftOS/skift), an os built from scratch in modern C++. 
  - **skiftOS** is featuring a reactive UI library and has a strong emphasis on user experience. 
  - **skiftOS** exposes its features to developers through clean APIs.
  - **skiftOS** includes many applications like an [Image Viewer](./userspace/apps/image-viewer), a [Text Editor](./userspace/apps/text-editor), a [Terminal Emulator](./userspace/apps/terminal), [etc](./userspace/apps)...
