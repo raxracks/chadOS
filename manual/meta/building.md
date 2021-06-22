@@ -57,7 +57,7 @@ If you have any problems consider upgrading to a GNU/linux distribution.
 Clone the repository with all its submodules.
 
 ```sh
-$ git clone --recursive https://github.com/skiftOS/skift
+$ git clone --recursive https://github.com/raxracks/chadOS
 
 $ cd skift
 ```
