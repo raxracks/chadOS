@@ -3,12 +3,15 @@
 #include "task-manager/widgets/ProcessTable.h"
 #include "task-manager/widgets/RAMGraph.h"
 
+#include <libio/Streams.h>
+#include <libsystem/io/Stream.h>    
+
 using namespace Widget;
 
 namespace TaskManager
 {
 
-TaskManager::TaskManager() : Window(WINDOW_RESIZABLE)
+TaskManager::TaskManager() : Window(WINDOW_RESIZABLE, 0, 100)
 {
     _model = make<TaskModel>();
 
@@ -23,9 +26,17 @@ RefPtr<Element> TaskManager::build()
 {
     // clang-format off
 
-    return min_size({700, 500},
+    IOCallDisplayModeArgs framebuffer_info;
+
+    Stream *device = stream_open(FRAMEBUFFER_DEVICE_PATH, HJ_OPEN_READ);
+    if (stream_call(device, IOCALL_DISPLAY_GET_MODE, &framebuffer_info) != SUCCESS)
+    {
+        IO::errln("Ioctl to " FRAMEBUFFER_DEVICE_PATH " failed");
+    }
+
+    return min_size({framebuffer_info.width, 20},
         vflow({
-            titlebar(Graphic::Icon::get("memory"), "Task Manager"),
+            /*titlebar(Graphic::Icon::get("memory"), "Task Manager"),
             fill(process_table(_model)),
             separator(),
             min_height(128,
@@ -36,7 +47,9 @@ RefPtr<Element> TaskManager::build()
                         fill(ram_graph(_model)),
                     })
                 )
-            ),
+            ),*/
+            fill(process_table(_model)),
+            separator(),
         })
     );
 

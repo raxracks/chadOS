@@ -13,7 +13,7 @@ struct FileManagerWindow : public Widget::Window
     {
         return Widget::vflow({
             Widget::titlebar(Graphic::Icon::get("folder"), "File Manager"),
-            Widget::toolbar({}),
+            Widget::basic_button("Hello")
         });
     }
 };

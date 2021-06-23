@@ -60,7 +60,7 @@ void Window::bound(Math::Recti new_bound)
     }
 }
 
-Window::Window(WindowFlag flags)
+Window::Window(WindowFlag flags, int x, int y)
 {
     static int window_handle_counter = 0;
     _handle = window_handle_counter++;
@@ -73,7 +73,7 @@ Window::Window(WindowFlag flags)
     _update_invoker = own<Async::Invoker>([this] { update(); });
 
     Application::the().add_window(this);
-    position({96, 72});
+    position({x, y});
 }
 
 Window::~Window()
