@@ -43,7 +43,7 @@ chadOS running in QEMU 4.2.1
 
 # Acknowledgements
 ## Skift
-Without skift, chadOS could not be possible, the contributors of skift and the founder are the ones who made chadOS possible, so thanks to them.  
+Without skift, chadOS could not be possible, the contributors of skift and the founder are the ones who made this project possible, so thanks to them.  
 
 ## Contributors
 
