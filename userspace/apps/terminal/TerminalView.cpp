@@ -276,6 +276,10 @@ void TerminalView::event(Widget::Event *event)
             send_sequence("\e[D");
             break;
 
+        case KEYBOARD_KEY_TAB:
+            // handle tab
+            break;
+
         default:
             if (event->keyboard.rune != 0)
             {

@@ -1,6 +1,0 @@
-{
-    "name": "Taskbar",
-    "comment": "Switch between tasks.",
-    "icon": "memory",
-    "command": "taskbar"
-}

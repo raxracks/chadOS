@@ -52,7 +52,7 @@ struct Application : public Widget::Application
                 spacing(6,
                     vflow(4,{
                         logo(),
-                        label("ChadOS is a distrobution of skiftOS.", Math::Anchor::CENTER),
+                        label("chadOS is a distrobution of skiftOS.", Math::Anchor::CENTER),
                         label(__BUILD_VERSION__, Math::Anchor::CENTER),
                         label(__BUILD_GITREF__ "/" __BUILD_CONFIG__, Math::Anchor::CENTER),
                         label("Copyright © 2018-2021", Math::Anchor::CENTER),
