@@ -95,7 +95,7 @@ public:
 
     Graphic::Color color(ThemeColorRole role);
 
-    Window(WindowFlag flags = WINDOW_NONE, int x = 96, int y = 72);
+    Window(WindowFlag flags = WINDOW_NONE);
 
     virtual ~Window();
 
