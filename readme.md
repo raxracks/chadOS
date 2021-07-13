@@ -1,3 +1,5 @@
+# Development is currently suspended until networking is available in skift.
+### The main objective of chadOS is to utilize a custom package manager, which will be implemented once networking is available. 
 
 ![Banner](manual/header.png)
 
